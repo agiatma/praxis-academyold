@@ -1,0 +1,125 @@
+Guru99
+
+1. ls
+agiatma@agiatma-virtual-machine:~$ ls
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+2. ls -R
+agiatma@agiatma-virtual-machine:~$ ls -R
+.:
+Desktop    Downloads         Music     praxis  Templates
+Documents  examples.desktop  Pictures  Public  Videos
+
+./Desktop:
+
+./Documents:
+
+./Downloads:
+google-chrome-stable_current_amd64.deb
+
+./Music:
+
+./Pictures:
+
+./praxis:
+minggu-01
+
+./praxis/minggu-01:
+hari-01
+
+./praxis/minggu-01/hari-01:
+
+./Public:
+
+./Templates:
+
+./Videos:
+
+3. ls -al
+agiatma@agiatma-virtual-machine:~$ ls -al
+total 120
+drwxr-xr-x 18 agiatma agiatma 4096 Agu  7 08:52 .
+drwxr-xr-x  3 root    root    4096 Agu  6 21:45 ..
+-rw-------  1 agiatma agiatma  907 Agu  7 09:23 .bash_history
+-rw-r--r--  1 agiatma agiatma  220 Agu  6 21:45 .bash_logout
+-rw-r--r--  1 agiatma agiatma 3771 Agu  6 21:45 .bashrc
+drwx------ 13 agiatma agiatma 4096 Agu  7 01:00 .cache
+drwx------  3 agiatma agiatma 4096 Agu  6 22:06 .compiz
+drwx------ 14 agiatma agiatma 4096 Agu  7 08:40 .config
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 22:09 Desktop
+-rw-r--r--  1 agiatma agiatma   25 Agu  6 21:58 .dmrc
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Documents
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  7 08:43 Downloads
+-rw-r--r--  1 agiatma agiatma 8980 Agu  6 21:45 examples.desktop
+drwx------  2 agiatma agiatma 4096 Agu  7 08:52 .gconf
+drwx------  3 agiatma agiatma 4096 Agu  7 08:52 .gnupg
+-rw-------  1 agiatma agiatma 1544 Agu  7 08:52 .ICEauthority
+drwx------  3 agiatma agiatma 4096 Agu  6 21:58 .local
+drwx------  4 agiatma agiatma 4096 Agu  6 22:09 .mozilla
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Music
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Pictures
+drwxrwxr-x  3 agiatma agiatma 4096 Agu  7 08:22 praxis
+-rw-r--r--  1 agiatma agiatma  655 Agu  6 21:45 .profile
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Public
+-rw-r--r--  1 agiatma agiatma    0 Agu  6 22:03 .sudo_as_admin_successful
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Templates
+drwxr-xr-x  2 agiatma agiatma 4096 Agu  6 21:58 Videos
+-rw-------  1 agiatma agiatma   68 Agu  7 08:52 .Xauthority
+-rw-------  1 agiatma agiatma   82 Agu  7 08:52 .xsession-errors
+-rw-------  1 agiatma agiatma 1081 Agu  7 08:51 .xsession-errors.old
+
+4. ls -a
+agiatma@agiatma-virtual-machine:~$ ls -a
+.              Documents         praxis
+..             Downloads         .profile
+.bash_history  examples.desktop  Public
+.bash_logout   .gconf            .sudo_as_admin_successful
+.bashrc        .gnupg            Templates
+.cache         .ICEauthority     Videos
+.compiz        .local            .Xauthority
+.config        .mozilla          .xsession-errors
+Desktop        Music             .xsession-errors.old
+.dmrc          Pictures
+
+5.Creating and Viewing File
+agiatma@agiatma-virtual-machine:~$ cat > sample1
+This is sample1 
+agiatma@agiatma-virtual-machine:~$ cat sample1
+This is sample1
+agiatma@agiatma-virtual-machine:~$ cat > sample2
+This is sample2
+agiatma@agiatma-virtual-machine:~$ cat sample2
+This is sample2
+agiatma@agiatma-virtual-machine:~$ cat sample1 sample2 > sample
+agiatma@agiatma-virtual-machine:~$ cat sample
+This is sample1
+This is sample2
+
+6. Deleting File
+agiatma@agiatma-virtual-machine:~$ ls
+Desktop    Downloads         Music     praxis  sample   sample2    Videos
+Documents  examples.desktop  Pictures  Public  sample1  Templates
+agiatma@agiatma-virtual-machine:~$ rm sample1
+agiatma@agiatma-virtual-machine:~$ ls
+Desktop    Downloads         Music     praxis  sample   Templates
+Documents  examples.desktop  Pictures  Public  sample2  Videos
+
+7. Moving and Renaming File
+Moving
+agiatma@agiatma-virtual-machine:~$ cat > sample3
+This is sample3
+agiatma@agiatma-virtual-machine:~$ sudo mv sample3 ~/Documents
+agiatma@agiatma-virtual-machine:~$ cd Documents\
+> 
+agiatma@agiatma-virtual-machine:~/Documents$ ls
+sample3
+
+Renaming
+agiatma@agiatma-virtual-machine:~$ mv sample test
+agiatma@agiatma-virtual-machine:~$ ls
+Desktop    Downloads         Music     praxis  Templates  Videos
+Documents  examples.desktop  Pictures  Public  test
+
+8.Directory Manipulations
+
