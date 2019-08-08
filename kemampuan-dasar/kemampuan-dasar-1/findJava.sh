@@ -17,4 +17,3 @@ else
 		echo "Terdapat variable java pada $var = $find "
 	fi
 fi
-
