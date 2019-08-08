@@ -1,0 +1,10 @@
+Praxis Academy
+
+1. Teknik Dasar 1
+Latihan
+1. Display manager = lightdm (cat /etc/X11/default-display-manager)
+2. Window manager = gnome3 + unityDE (echo $DESKTOP_SESSION)
+3. Desktop Environment = unity (echo $XDG_CURRENT_DESKTOP)
+4. Shell = bash(echo $0)
+5. Lokasi kernel linux = boot/vmlinuz 4.10.0-28-generic
+6. Linux Header = File header antar antarmuka yang menentukan bagaimana fungsi dalam file sumber didefinisikan.
